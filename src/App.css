@@ -9,8 +9,8 @@
 
 .App-header {
   background-color: #222;
-  height: 150px;
-  padding: 20px;
+  height: auto;
+  padding: 1px;
   color: white;
 }
 
@@ -20,6 +20,49 @@
 
 .App-intro {
   font-size: large;
+  margin: 10px;
+}
+
+.Intro-body {
+  font-size: 1.0em;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.nav-btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: auto;
+}
+
+.nav-btn {
+  background: #fcfcfc;
+  background-image: -webkit-linear-gradient(top, #fcfcfc, #34b1c7);
+  background-image: -moz-linear-gradient(top, #fcfcfc, #34b1c7);
+  background-image: -ms-linear-gradient(top, #fcfcfc, #34b1c7);
+  background-image: -o-linear-gradient(top, #fcfcfc, #34b1c7);
+  background-image: linear-gradient(to bottom, #fcfcfc, #34b1c7);
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  text-shadow: 1px 1px 3px #666666;
+  font-family: Arial;
+  color: #000000;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  border: solid #bfbfbf 1px;
+  text-decoration: none;
+}
+
+.nav-btn:hover {
+  background: #fcfcfc;
+  background-image: -webkit-linear-gradient(top, #fcfcfc, #3a8c99);
+  background-image: -moz-linear-gradient(top, #fcfcfc, #3a8c99);
+  background-image: -ms-linear-gradient(top, #fcfcfc, #3a8c99);
+  background-image: -o-linear-gradient(top, #fcfcfc, #3a8c99);
+  background-image: linear-gradient(to bottom, #fcfcfc, #3a8c99);
+  text-decoration: none;
 }
 
 @keyframes App-logo-spin {
