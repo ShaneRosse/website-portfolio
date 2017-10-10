@@ -20,83 +20,129 @@ const ContactBtn = () => (
   </div>
 );
 
+const SemesterList = ({ title, details }) => (
+  <li>
+    {`${title}`}
+    <ul>
+      {details.map(props => {
+        return <li>{props}</li>;
+      })}
+    </ul>
+  </li>
+);
+
 const AboutMe = () => (
   <section id="about-me">
     <div className="App-intro">
-      <div className="Intro-body">My name is Shane Rosse.</div>
-      <div className="Intro-body">I'm an avid learner of new technology. </div>
       <div className="Intro-body">
-        This page was built with Create React App.
+        <p>My name is Shane Rosse.</p>
       </div>
-      <div className="Intro-body">
-        Follow along as I built out the rest of my portfolio!
-      </div>
-
-      <div>
-        <p>
-          The first time I asked "How does a website work?" I was in 5th grade.
-        </p>
-        <p>
-          Lucky for me I I had a teacher who gave me an HTML book. While I wish
-          I could say my career in software began there... I was still the kid I
-          am at heart today.
-        </p>
-
-        <ul>
+      <p>I'm an avid learner of new technology.</p>
+      <p>
+        The first time I asked <i>How does a website work?</i> I had recently
+        turned 11 in the 5th grade.
+      </p>
+      <p>
+        While I was lucky enough to have a teacher who pointed me to an HTML
+        book and I wish I could say my career in software began there... I was
+        still the kid I am at heart today, always chasing my curiosity.
+      </p>
+      <div className="Intro-body" align="left">
+        <ul style={{ listStyleType: "none" }}>
+          <b>
+            <i>
+              <li>Public Education</li>
+            </i>
+          </b>
+          <br />
           <li>
-            In 7th grade I was setting up network proxies to use YouTube at
-            school.
+            6th grade - Learning about network proxies to use YouTube at school.
           </li>
           <li>
-            In 8th grade I built an a science fair award winning hovercraft.
+            7th grade - LOGO the turtle and LEGO Mindstorms were the coolest.
           </li>
           <li>
-            In 9th grade I was installing VMs on the school computers to play
-            video games.
+            8th grade - built an a award winning gasoline powered hovercraft for
+            the science fair.
           </li>
           <li>
-            In 10th grade I was learning Java! Which quickly devolved into...
+            9th grade - Installing VMs on school computers to play video games.
+          </li>
+          <li>
+            10th grade - Learning Java! Until the teacher quit, so we did
             HTML/CSS/JS.. <b>wat</b>?
           </li>
           <li>
-            In 11th grade I was electrically wiring miniature homes and building
-            catapults in Physics.
+            11th grade - Wired up circuits in a micro home and contructed a 20ft
+            catapult.
           </li>
           <li>
-            By 12th grade I'd had such lopsided experiences between software and
-            physics that I settled on studying Electrical Engineering
+            12th grade - Applying for colleges I was torn... I loved building
+            everything.
+          </li>
+          <br />
+          <li>
+            <b>
+              <i>Enter USC Electrical Engineering</i>
+            </b>
           </li>
         </ul>
 
-        <ul>
-          Semester 1-2: I was tricked! EEs still had to learn how to code
-          Matlab.
+        <ul style={{ listStyleType: "none" }}>
+          <SemesterList
+            title={"Semester 1 & 2"}
+            details={[
+              "Introduced to Matlab, study plenty of math and science, enjoy college. :)"
+            ]}
+          />
+          <SemesterList
+            title={"Semester 3"}
+            details={[
+              "Program digital circuits in Verilog to understand the fundamentals of Boolean algebra and state machines."
+            ]}
+          />
+          <SemesterList
+            title={"Semester 4"}
+            details={[
+              "Build a wood electric guitar complete with pre-amp and filters wired on a Protoboard.",
+              "Complete the engineering math and physics tracks through differential equations 2 and modern physics."
+            ]}
+          />{" "}
+          <SemesterList
+            title={"Summer 2014"}
+            details={["Begin working as a remote QA engineer for extra cash."]}
+          />
+          <SemesterList
+            title={"Semester 5"}
+            details={[
+              "Applying Fourier series and transforms to linear systems were the theme of the semester until a Java elective stole my attention."
+            ]}
+          />
+          <SemesterList
+            title={"Semester 6"}
+            details={[
+              "Quickly absorbed Objective-C and iOS textbooks",
+              "Loved learning C++",
+              "Experimented with MIPs Assembly on a Coldfire RISC board",
+              "QA Intern for Fox Sports"
+            ]}
+          />
+          <SemesterList
+            title={"Summer 2015"}
+            details={[
+              "Intern at Ticketmaster pair programming alongside senior engineers.",
+              "Dedicate myself to crafstmanship reading Pragmatic Programmer and Clean Code.",
+              "Love the experience so much I change my major to take more software courses.",
+              "The new degree path applies 3 years of EE to the CS curriculum for a Computer Engineering/Computer Science B.S."
+            ]}
+          />
+          <br />
           <li>
-            Semester 3-4: Completed the Math and Physics tracks for EE learning
-            Verilog along the way. Began work as a remote QA engineer over the
-            Summer for extra cash.
+            <b>
+              <i>Enter USC Computer Science</i>
+            </b>
           </li>
-          <li>
-            Semester 5: Fourier Series and Transforms were the theme of the
-            semester until a Java elective stole my interest.
-          </li>
-          <li>
-            Winter: Devoured an iOS and Objective-C book to jump ahead in a
-            mobile class.
-          </li>
-          <li>
-            Semester 6: Loved C++, Computer Organization (Assembly) and Mobile
-            Apps. Spring intern as a QA engineer.
-          </li>
-          <li>
-            Summer: Intern at Ticketmaster pair programming with senior iOS
-            engineers.
-          </li>
-          <li>
-            Decide to change my degree path to Computer Engineering/Computer
-            Science I was repeatedly told these 13 classes would take 4
-            semesters, but I had to do it in 3.
-          </li>
+          <br />
           <li>
             Semester 7: Grad EE Computer Architecture, Data Structures, Discrete
             Math, Writing - a lot of C++
