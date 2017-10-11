@@ -43,9 +43,8 @@ const AboutMe = () => (
         turned 11 in the 5th grade.
       </p>
       <p>
-        While I was lucky enough to have a teacher who pointed me to an HTML
-        book and I wish I could say my career in software began there... I was
-        still the kid I am at heart today, always chasing my curiosity.
+        I was lucky enough to have a teacher point me to an HTML book and my
+        curiosity has never been satisfied...
       </p>
       <div className="Intro-body" align="left">
         <ul style={{ listStyleType: "none" }}>
@@ -143,28 +142,33 @@ const AboutMe = () => (
             </b>
           </li>
           <br />
-          <li>
-            Semester 7: Grad EE Computer Architecture, Data Structures, Discrete
-            Math, Writing - a lot of C++
-          </li>
-          <li>
-            Semester 8: Fullstack Java Apps, Algorithms, Advanced iOS,
-            Networking, Distributed Computing This semester moved the needle the
-            most on my "10,000 hour" mark. I was completing projects on a weekly
-            basis in Java, C, C++, Python, Obj-C and Swift
-          </li>
-          <li>
-            Semester 9: Operating Systems (Pintos in C) 2D/3D Video Games (C++
-            and Unreal) Pro C++ (Functional progamming and Compilers) Senior
-            Project - Provid much needed update to global chat app on iOS
-          </li>
-          <li>
-            My final semester I also wanted to give back. I was the Teaching
-            Assistant for the two iOS classes I had taken the previous year. I
-            had a lot of fun spending several hours each week debugging iOS apps
-            with students. I enjoy coding and helping people learn so much I
-            would often assist with any class I could.
-          </li>
+          <SemesterList
+            title={"Semester 7"}
+            details={[
+              "More MIPs and VHDL in Graduate Computer Architecture",
+              "Solidify the fundamentals of CS in data structures and discrete math"
+            ]}
+          />
+          <SemesterList
+            title={"Semester 8"}
+            details={[
+              "Built a Java clone of Google Docs as a desktop app",
+              "Solve massively parallel problems at USC HPC using CUDA, MapReduce, etc",
+              "Re-implement a TCP experiment and anlysis in Python",
+              "Learn Swift and begin building iOS apps at every Hackathon I attend"
+            ]}
+          />
+          <SemesterList
+            title={"Semester 9"}
+            details={[
+              "Complete Stanford OS Pintos Project",
+              "Build 7 2D & 3D video games using C++ and Unreal",
+              "Explore compilers and functional programming in C++",
+              "Migrate global chat app LextTalk from iOS 8 to 10 while adding a number of features",
+              "Worked as a TA attending intro and advanced iOS courses, holding office hours and helping over 100 students",
+              "I enjoyed helping other learn to code so much I often helped with whatever project was put in front of me"
+            ]}
+          />
         </ul>
       </div>
     </div>
