@@ -39,12 +39,16 @@ const AboutMe = () => (
       </div>
       <p>I'm an avid learner of new technology.</p>
       <p>
-        The first time I asked <i>How does a website work?</i> I had recently
-        turned 11 in the 5th grade.
+        The first time I asked <i>How does a website work?</i> It was 2004 and I
+        in the 5th grade.
       </p>
       <p>
         I was lucky enough to have a teacher point me to an HTML book and my
         curiosity has never been satisfied...
+      </p>
+      <p>
+        People often ask when I began programming... and now, you can take your
+        pick over the last 10 years!
       </p>
       <div className="Intro-body" align="left">
         <ul style={{ listStyleType: "none" }}>
@@ -55,121 +59,94 @@ const AboutMe = () => (
           </b>
           <br />
           <li>
-            6th grade - Learning about network proxies to use YouTube at school.
+            2006 - Learn about network proxies to watch YouTube at school.
           </li>
           <li>
-            7th grade - LOGO the turtle and LEGO Mindstorms were the coolest.
+            2007 - LOGO programming and LEGO Mindstorms captivated my
+            imagination.
           </li>
           <li>
-            8th grade - built an a award winning gasoline powered hovercraft for
-            the science fair.
+            2008 - Build an award winning gasoline powered hovercraft for the
+            science fair.
+          </li>
+          2009 - Learn simple AUTOCAD and build a 2 stroke engine from a kit
+          <li>
+            2010 - Learn Java! Until the teacher quits, so we switch to
+            HTML/CSS/JS.
           </li>
           <li>
-            9th grade - Installing VMs on school computers to play video games.
+            2011 - Design and wire the electrical circuits in a 2 foot styrofoam
+            home. Contruct a 20ft catapult.
           </li>
-          <li>
-            10th grade - Learning Java! Until the teacher quit, so we did
-            HTML/CSS/JS.. <b>wat</b>?
-          </li>
-          <li>
-            11th grade - Wired up circuits in a micro home and contructed a 20ft
-            catapult.
-          </li>
-          <li>
-            12th grade - Applying for colleges I was torn... I loved building
-            everything.
-          </li>
+          <li>2012 - Move to Los Angeles to study Electrical Engineering.</li>
           <br />
           <li>
             <b>
-              <i>Enter USC Electrical Engineering</i>
+              <i>USC Viterbi School of Engineering</i>
             </b>
           </li>
         </ul>
 
         <ul style={{ listStyleType: "none" }}>
           <SemesterList
-            title={"Semester 1 & 2"}
+            title={"2013"}
             details={[
-              "Introduced to Matlab, study plenty of math and science, enjoy college. :)"
-            ]}
-          />
-          <SemesterList
-            title={"Semester 3"}
-            details={[
+              "Introduced to Matlab, study plenty of math and science, enjoy college. :)",
               "Program digital circuits in Verilog to understand the fundamentals of Boolean algebra and state machines."
             ]}
           />
           <SemesterList
-            title={"Semester 4"}
+            title={"2014"}
             details={[
               "Build a wood electric guitar complete with pre-amp and filters wired on a Protoboard.",
-              "Complete the engineering math and physics tracks through differential equations 2 and modern physics."
-            ]}
-          />{" "}
-          <SemesterList
-            title={"Summer 2014"}
-            details={["Begin working as a remote QA engineer for extra cash."]}
-          />
-          <SemesterList
-            title={"Semester 5"}
-            details={[
-              "Applying Fourier series and transforms to linear systems were the theme of the semester until a Java elective stole my attention."
+              "Complete the engineering math and physics tracks through differential equations 2 and modern physics.",
+              "Work as a remote QA engineer for extra cash.",
+              "Apply Fourier transforms to linear systems by hand.",
+              "Java steals my attention."
             ]}
           />
           <SemesterList
-            title={"Semester 6"}
+            title={"2015"}
             details={[
-              "Quickly absorbed Objective-C and iOS textbooks",
-              "Loved learning C++",
-              "Experimented with MIPs Assembly on a Coldfire RISC board",
-              "QA Intern for Fox Sports"
-            ]}
-          />
-          <SemesterList
-            title={"Summer 2015"}
-            details={[
-              "Intern at Ticketmaster pair programming alongside senior engineers.",
+              "Quickly absorb Objective-C and iOS textbooks",
+              "Love learning C++",
+              "Experiment with MIPs assembly on a Coldfire RISC board",
+              "QA Intern for Fox Sports",
+              "Write Objective-C at Ticketmaster pair programming alongside senior engineers.",
               "Dedicate myself to crafstmanship reading Pragmatic Programmer and Clean Code.",
               "Love the experience so much I change my major to take more software courses.",
-              "The new degree path applies 3 years of EE to the CS curriculum for a Computer Engineering/Computer Science B.S."
-            ]}
-          />
-          <br />
-          <li>
-            <b>
-              <i>Enter USC Computer Science</i>
-            </b>
-          </li>
-          <br />
-          <SemesterList
-            title={"Semester 7"}
-            details={[
+              "The new degree path applies 3 years of EE to the CS curriculum for a Computer Engineering/Computer Science B.S.",
               "More MIPs and VHDL in Graduate Computer Architecture",
               "Solidify the fundamentals of CS in data structures and discrete math"
             ]}
           />
           <SemesterList
-            title={"Semester 8"}
+            title={"2016"}
             details={[
-              "Built a Java clone of Google Docs as a desktop app",
-              "Solve massively parallel problems at USC HPC using CUDA, MapReduce, etc",
+              "Build a Java clone of Google Docs as a desktop app",
+              "Solve massively parallel problems on the USC HPC using CUDA, MapReduce, etc",
               "Re-implement a TCP experiment and anlysis in Python",
-              "Learn Swift and begin building iOS apps at every Hackathon I attend"
-            ]}
-          />
-          <SemesterList
-            title={"Semester 9"}
-            details={[
-              "Complete Stanford OS Pintos Project",
+              "Learn Swift and build a pair of meal service feedback apps for my fraternity",
+              "Write Swift and Objective-C at Ticketmaster",
+              "Release my first app, LA Metro Time, to Apple's App Store",
+              "Complete Stanford's OS Pintos Project",
               "Build 7 2D & 3D video games using C++ and Unreal",
               "Explore compilers and functional programming in C++",
               "Migrate global chat app LextTalk from iOS 8 to 10 while adding a number of features",
-              "Worked as a TA attending intro and advanced iOS courses, holding office hours and helping over 100 students",
-              "I enjoyed helping other learn to code so much I often helped with whatever project was put in front of me"
+              "Work as a TA attending intro and advanced iOS courses, holding office hours and helping over 100 students",
+              "I enjoy helping others learn to code so much I often help with whatever project is brought to me",
+              "Migrate Alaska 511 Highways app from iOS 6 to iOS 10",
+              "Contract for ShadeCraft through DeveloCorp"
             ]}
           />
         </ul>
+        <b>
+          <i>
+            {"I was often told in 2015 that I could not accomplish my new degree by the end of 2016. " +
+              "At first it was hard and then programming became second nature. " +
+              "Now my curiosity is hungrier than ever.. can I help you build something? Contact me. "}
+          </i>
+        </b>
       </div>
     </div>
   </section>
